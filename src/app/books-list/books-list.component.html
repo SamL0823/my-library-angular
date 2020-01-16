@@ -1,3 +1,5 @@
+
 <ul>
-    <li *ngFor="let book in books">{{book.title}}</li>
+    <h3>{{name}}</h3>
+    <li *ngFor="let book of books">{{book.title}}, {{book.author}}, {{book.year}}</li>
 </ul>
