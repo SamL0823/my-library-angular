@@ -3,3 +3,7 @@
     <h3>{{name}}</h3>
     <li *ngFor="let book of books">{{book.title}}, {{book.author}}, {{book.year}}</li>
 </ul>
+<label>Title<input [(ngModel)]="newTitle" type="text"/></label>
+<label>Author<input [(ngModel)]="newAuthor" type="text"/></label>
+<label>Year<input [(ngModel)]="newYear" type="text"/></label>
+<button (click)="addBook()">Add</button>

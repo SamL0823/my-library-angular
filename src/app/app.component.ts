@@ -18,8 +18,4 @@ export class AppComponent {
     new Book('Where the Sidewalk Ends', 'Shel Silverstein', 1974) 
   ]
 
-  read = [
-    new Book('The Hobbit', 'J.R.R. Tolkien', 1937 ),
-    new Book('Of Mice and Men', 'John Steinbeck', 1937)
-  ]
 }
