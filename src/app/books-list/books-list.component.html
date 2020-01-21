@@ -1,9 +1,17 @@
+<div class="row">
+    <div class="column left">
+            <ul>
+            <h1>{{name}}</h1>
+            <li *ngFor="let book of books">{{book.title}}, {{book.author}}, {{book.year}}</li>
+            </ul>
+        </div>
+        <div class="column right" >
+            <label>Title<input [(ngModel)]="newTitle" type="text"/></label><br>
+            <label>Author<input [(ngModel)]="newAuthor" type="text"/></label><br>
+            <label>Year<input [(ngModel)]="newYear" type="text"/></label><br>
+            <button (click)="addBook()">Add</button>
+        </div>
+</div>
+    
+    
 
-<ul>
-    <h3>{{name}}</h3>
-    <li *ngFor="let book of books">{{book.title}}, {{book.author}}, {{book.year}}</li>
-</ul>
-<label>Title<input [(ngModel)]="newTitle" type="text"/></label>
-<label>Author<input [(ngModel)]="newAuthor" type="text"/></label>
-<label>Year<input [(ngModel)]="newYear" type="text"/></label>
-<button (click)="addBook()">Add</button>
